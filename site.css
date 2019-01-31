@@ -20,6 +20,8 @@ p {
 
 blockquote {
     background-color: #D9E5E3;
+    color: #851944;
+    text-align: "Open Sans Condensed";
     padding: 16px;
     border: 10px solid #C2CCCA;
     margin: 0;
