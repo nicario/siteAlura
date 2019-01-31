@@ -7,13 +7,13 @@ body {
 
 h1, h2 {
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-    font-size: 100%;
 }
 
 main h1 {
     text-align: center;
     background-color: #851944;
     color: #FFF;
+    padding: 25px;
     border-bottom: 10px solid black;
     font-size: 60px;
 }
@@ -25,22 +25,15 @@ p {
 
 blockquote {
     background-color: #D9E5E3;
-    color: #851944;
-    text-align: "Open Sans Condensed";
-    margin: 20px 40px;
-}
-blockquote {
-    padding: 16px;
     border: 10px solid #C2CCCA;
-    margin: 0;
     width: 250px;
     box-sizing: border-box;
+    margin: 20px 40px;
 }
 
 aside {
     background-color: #3C1D3D;
     color: #F2FFFC;
-    text-align: center;
 }
 
 footer {
@@ -52,8 +45,17 @@ nav a {
     color: #F2FFFC;
 }
 
-h1 {
-    padding: 24px;
+main a {
+    color: #851944;
+}
+
+aside a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+blockquote, aside, footer {
+    padding: 20px;
 }
 
 main div {
@@ -62,8 +64,8 @@ main div {
     padding: 30px 0;
 }
 
-ul {
-    list-style-type: none;
+aside {
+    text-align: center;
 }
 
 aside h1 {
@@ -81,4 +83,8 @@ em {
 
 h2 {
     font-size: 30px;
+}
+
+aside li {
+    display: inline-block;
 }
