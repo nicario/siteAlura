@@ -85,6 +85,18 @@ h2 {
     font-size: 30px;
 }
 
-aside li {
+.icone-sociais li {
     display: inline-block;
+}
+
+#rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 20px;
+}
+
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
 }
