@@ -47,3 +47,7 @@ h1 {
     padding: 24px;
 }
 
+main div {
+    width: 720px;
+    margin: auto;
+}
