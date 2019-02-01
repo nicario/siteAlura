@@ -100,3 +100,65 @@ article {
     border-bottom: 1px solid #CCC;
     margin-bottom: 20px;
 }
+
+h1 {
+    text-transform: uppercase;
+}
+
+.icone-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+
+.github {
+    background-image: url(github.png);
+}
+
+.twitter {
+    background-image: url(twitter.png);
+}
+
+.linkedin {
+    background-image: url(linkedin.png);
+}
+
+.citacao-bio-fiat {
+    float: right;
+}
+
+.citacao-bio-petrobras {
+    float: left;
+}
+
+main {
+    width: 80%;
+}
+
+img,
+aside {
+    width: 20%;
+    float: right;
+}
+
+aside {
+    clear: right;
+}
+
+aside {
+    box-sizing: border-box;
+}
+
+main {
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
