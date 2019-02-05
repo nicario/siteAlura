@@ -38,10 +38,8 @@
     padding: 2em;
 }
 
-}
 .secao-inicio h2 {
     font-size: 3em;
-    text-shadow: 2px 2px #000;
     text-transform: uppercase;
     margin-bottom: .5em;
 }
@@ -100,4 +98,111 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+}
+
+.inicio-post {
+    background-color: #FFF;
+    position: absolute;
+    top: 3em;
+    right: 3em;
+    height: 6em;
+    padding: 1em;
+}
+
+.blog {
+    background-color: #999;
+    position: relative;
+}
+
+.palavra-home {
+    position: absolute;
+    font-family: "Shadow Into Light", cursive;
+    font-weight: bold;
+    color: #D5447E;
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+}
+
+.boas-praticas {
+    top: 70%;
+    left: 20%;
+}
+
+.codigo-limpo {
+    top: 45%;
+    left: 10%;
+}
+
+.cs3 {
+    top: 50%;
+    left: 30%;
+}
+
+.html5 {
+    top: 40%;
+    left: 80%;
+}
+
+.javascript {
+    top: 10%;
+    left: 60%
+}
+
+.acessibilidade {
+    top: 30%;
+    left: 25%;
+}
+
+.responsivo {
+    top: 15%;
+    left: 15%;
+}
+
+.otimizacoes {
+    top: 60%;
+    left: 70%;
+}
+
+.agilidade {
+    top: 10%;
+    left: 30%;
+}
+
+.design {
+    top: 35%;
+    left: 65%;
+}
+
+header {
+    position: relative;
+}
+
+.blog .inicio-post {
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+}
+
+.blog {
+    position: relative;
+}
+
+.blog .mais-recente {
+    background-color: #F2FFFC;
+}
+
+.blog .mais-recente {
+    color: #F26;
+}
+
+.blog li {
+    width: 30%;
 }
