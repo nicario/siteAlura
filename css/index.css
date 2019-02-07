@@ -59,6 +59,17 @@ h1 {
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 }
+.trabalhos {
+    background-image: linear-gradient(135deg,
+        transparent,
+        transparent 14px,
+        rgba(0,0,0,0.1) 14px,
+        rgba(0,0,0,0.1) 15px,
+        transparent 15px,
+        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+}
 .trabalhos h2 {
     color: #FFF;
 }
@@ -217,6 +228,10 @@ body {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative;
+    background-image: linear-gradient(to bottom, #F00, #888 80%, #000);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .banner-twitter {
     position: absolute;
@@ -262,4 +277,15 @@ body {
 }
 .blog .mais-recente a {
     color: #F26;
+}
+.blog {
+    background-image: linear-gradient(45deg,
+                        transparent,
+                        transparent 14px,
+                        rgba(255, 255, 255, 0.1) 14px,
+                        rgba(255, 255, 255, 0.1) 15px,
+                        transparent 15px,
+                        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
