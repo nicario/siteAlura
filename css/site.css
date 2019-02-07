@@ -141,3 +141,13 @@ main {
     right: 0;
     height: 300px;
 }
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color:red;
+}
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}

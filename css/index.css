@@ -1,12 +1,6 @@
-h1 {
-    text-transform: uppercase;
-    font-size: 3em;
-    text-shadow: 2px 2px #000;
-}
 .foto-home {
     height: 200px;
     border-radius: 50%;
-    box-shadow: 0 0 1em #000;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -43,7 +37,6 @@ h1 {
     margin: 2em auto;
     display: block;
     text-align: center;
-    box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
 }
 .secao-inicio {
     padding: 2em;
@@ -52,21 +45,13 @@ h1 {
     font-size: 3em;
     text-transform: uppercase;
     margin-bottom: .5em;
-    text-shadow: 2px 2px #000; 
+    text-shadow: 2px 2px #000;
 }
 .trabalhos {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
-}
-.trabalhos {
-    background-image: linear-gradient(135deg,
-        transparent,
-        transparent 14px,
-        rgba(0,0,0,0.1) 14px,
-        rgba(0,0,0,0.1) 15px,
-        transparent 15px,
-        transparent);
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
     background-attachment: fixed;
 }
@@ -88,6 +73,9 @@ h1 {
 .blog {
     background-color: #999;
     position: relative;
+    background-image: linear-gradient(45deg, transparent, transparent 14px, rgba(255,255,255,.1) 14px, rgba(255,255,255,.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
     color: #FFF;
     border-bottom: .5em solid #851944;
 }
@@ -142,7 +130,7 @@ body {
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
     font-size: 400%;
-    color: #D5447E;
+    color: rgba(255, 127, 127, .5);
     position: absolute;
 }
 .eficiencia {
@@ -150,7 +138,6 @@ body {
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
-    opacity: .3;
 }
 .boas-praticas {
     top: 70%;
@@ -183,15 +170,12 @@ body {
 .javascript {
     top: 15%;
     left: 60%;
-    opacity: .3;
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
-    opacity: .3;
 }
 .acessibilidade {
     top: 30%;
     left: 35%;
-    opacity: .8;
     -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
     opacity: .8;
@@ -228,10 +212,6 @@ body {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative;
-    background-image: linear-gradient(to bottom, #F00, #888 80%, #000);
-    background-size: 100% 200px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .banner-twitter {
     position: absolute;
@@ -271,21 +251,14 @@ body {
     background-color: #F2FFFC;
     color: #000;
     padding: 1.5em;
+    display: none;
 }
-.blog .mais-recente {
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+.blog a:hover,
+.blog a:focus {
     background-color: #F2FFFC;
-}
-.blog .mais-recente a {
     color: #F26;
-}
-.blog {
-    background-image: linear-gradient(45deg,
-                        transparent,
-                        transparent 14px,
-                        rgba(255, 255, 255, 0.1) 14px,
-                        rgba(255, 255, 255, 0.1) 15px,
-                        transparent 15px,
-                        transparent);
-    background-size: 20px 20px;
-    background-attachment: fixed;
 }
