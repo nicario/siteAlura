@@ -26,6 +26,22 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
+
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+.saudacao:hover em {
+    animation-play-state: paused;
 }
 .botao-index {
     font-size: 1.25em;
@@ -37,6 +53,14 @@
     margin: 2em auto;
     display: block;
     text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
 .secao-inicio {
     padding: 2em;
@@ -132,6 +156,22 @@ body {
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
+}
+.palavra-home {
+    -webkit-animation: aparece 2s;
+    animation: 2s;
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 .eficiencia {
     top: 50%;
@@ -240,6 +280,10 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;
