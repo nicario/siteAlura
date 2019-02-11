@@ -1,3 +1,6 @@
+body {
+    display: block;
+}
 .foto-home {
     height: 200px;
     border-radius: 50%;
@@ -26,22 +29,15 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
-
-    animation: flutua 1s infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    -webkit-animation: flutua 1s ease-in-out infinite;
+            animation: flutua 1s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     position: relative;
 }
-@keyframes flutua {
-    from {
-        top: -5px;
-    }
-    to {
-        top: 5px;
-    }
-}
 .saudacao:hover em {
-    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 .botao-index {
     font-size: 1.25em;
@@ -83,12 +79,23 @@
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
-    border: .5em solid black;
+    display: -webkit-flex;
+    display:         flex;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    -webkit-flex: auto;
+            flex: auto;
+    border: .5em solid #000;
+}
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+.trabalhos li:nth-child(3) {
+    order: 3;
 }
 .trabalhos img {
     width: 100%;
@@ -156,22 +163,8 @@ body {
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
-}
-.palavra-home {
     -webkit-animation: aparece 2s;
-    animation: 2s;
-}
-@keyframes aparece {
-    0% {
-        opacity: 0;
-        transform: scale(0.001);
-    }
-}
-@-webkit-keyframes aparece {
-    0% {
-        opacity: 0;
-        transform: scale(0.001);
-    }
+            animation: aparece 2s;
 }
 .eficiencia {
     top: 50%;
@@ -260,16 +253,12 @@ body {
 
     line-height: 1;
 
-    /* largura = 14em */
-    /* altura = 3.5em */
-    /* tx = .707 * h - .707 * w + w */
-    /* ty = -.707 * h */
-    -webkit-transform: translate(6.5765em, -2.4745em) rotate(45deg);
-            transform: translate(6.5765em, -2.4745em) rotate(45deg);
+    -webkit-transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+            transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
-    width: 14em;
-    padding: 1em 0;
+
+    padding: 1em 3em;
     box-sizing: border-box;
 
     text-align: center;
@@ -280,10 +269,12 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
-
-    animation: aparece 0.5s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
+    -webkit-animation: aparece .5s;
+            animation: aparece .5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;
@@ -304,4 +295,32 @@ body {
 .blog a:focus {
     background-color: #F2FFFC;
     color: #F26;
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }

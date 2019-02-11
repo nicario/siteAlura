@@ -5,67 +5,10 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
-    transition: transform 1s, box-shadow 2s ease-in;
-    transition-delay: 0s, 1s;
-    position: relative;
-    -webkit-animation: quica 1s infinite;
-    animation: quica 1s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-}
-@-webkit-keyframes quica {
-    from {
-        top: 0;
-    }
-    90% {
-        transform: rotate(-2deg);
-    }
-    95% {
-        transform: rotate(2deg);
-    }
-    to {
-        top: 1em;
-    }
-}
-@keyframes quica {
-    from {
-        top: 0;
-    }
-    90% {
-        transform: rotate(-2deg);
-    }
-    95% {
-        transform: rotate(2deg);
-    }
-    to {
-        top: 1em;
-    }
-}
-h1 {
-    animation: aparece 2s;
-}
-@-webkit-keyframes aparece {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes aparece {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.citacao-bio {
     transition: box-shadow 1s, transform 1s;
     transition-delay: 1s, 0s;
 }
+
 .citacao-bio:nth-of-type(even) {
     float: left;
     margin-left: 0;
@@ -79,8 +22,6 @@ h1 {
 .citacao-bio:hover,
 .citacao-bio:focus {
     box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
     transition-delay: 0s, 1s;
 }
 
@@ -114,46 +55,36 @@ h1 {
 .citacao-bio > p {
     position: relative;
 }
-.habilidades th {
-    font-weight: bold;
-    background-color: #851944;
-    color: white;
-}
-.habilidades thead th {
-    background-color: #3C1D3D;
-}
-.habilidades td {
-    background-color: #EEE;
-}
-.habilidades th,
-.habilidades td {
-    padding: 1em;
-}
+
 .habilidades {
     border-collapse: separate;
     border-spacing: .25em;
     margin: 1em 0;
 }
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
 .habilidades [colspan] {
     text-align: center;
     font-style: italic;
 }
 .habilidades [rowspan] {
     vertical-align: middle;
-}
-.palavra-home {
-    -webkit-animation: aparece 2s;
-    animation: 2s;
-}
-@keyframes aparece {
-    0% {
-        opacity: 0;
-        transform: scale(0.001);
-    }
-}
-@-webkit-keyframes aparece {
-    0% {
-        opacity: 0;
-        transform: scale(0.001);
-    }
 }
